@@ -38,5 +38,13 @@ pipeline {
                 '''
             }
         }
+        stage("test") {
+            steps {
+                echo " ============== start test =================="
+                sh '''
+                hostname
+                '''
+            }
+        }
     }
 }
